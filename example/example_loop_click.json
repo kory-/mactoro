@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "default_wait": 0.5,
+    "screenshot_on_error": true,
+    "max_runtime": 3600
+  },
+  "actions": [
+    {
+      "type": "log",
+      "message": "Infinite click example (continues until color changes)"
+    },
+    {
+      "type": "loop_until",
+      "condition": {
+        "type": "color_match",
+        "x": 500,
+        "y": 300,
+        "color": [255, 0, 0],
+        "tolerance": 10
+      },
+      "timeout": 60,
+      "actions": [
+        {
+          "type": "click",
+          "x": 400,
+          "y": 400,
+          "relative_to": "window"
+        },
+        {
+          "type": "wait",
+          "seconds": 1
+        }
+      ],
+      "_comment": "Repeat clicks until red color is detected (maximum 60 seconds)"
+    }
+  ]
+}

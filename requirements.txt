@@ -1,0 +1,6 @@
+pyobjc
+pyautogui>=0.9.54
+click>=8.1.7
+pillow>=10.0.0
+opencv-python>=4.8.0
+pynput>=1.7.6

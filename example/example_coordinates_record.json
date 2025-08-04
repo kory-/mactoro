@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "default_wait": 0.5,
+    "screenshot_on_error": true
+  },
+  "actions": [
+    {
+      "type": "log",
+      "message": "Automation example using recorded coordinates"
+    },
+    {
+      "type": "click",
+      "x": 100,
+      "y": 200,
+      "relative_to": "window",
+      "description": "Click button 1"
+    },
+    {
+      "type": "wait_for_color",
+      "x": 150,
+      "y": 250,
+      "color": [0, 122, 255],
+      "tolerance": 10,
+      "timeout": 5,
+      "description": "Wait until button turns blue"
+    },
+    {
+      "type": "type",
+      "text": "Auto input text",
+      "interval": 0.05
+    },
+    {
+      "type": "click",
+      "x": 200,
+      "y": 300,
+      "relative_to": "window",
+      "description": "Click submit button"
+    }
+  ],
+  "_comment": "Configuration example using position information recorded with coordinate recording feature"
+}
